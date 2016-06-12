@@ -4,7 +4,7 @@ ENV GITLAB_HOST="https://gitlab.com" \
     GITLAB_TOKEN="qwerty" \
     COMMAND="help"
 
-RUN apk add --update curl
+RUN apk add --update curl jq
 
 COPY ./ /
 
